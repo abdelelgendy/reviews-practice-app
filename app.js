@@ -73,3 +73,8 @@ prevBtn.addEventListener('click',()=>{
   }
   showPerson(currentItem);
 })
+//show random person btn
+randomBtn.addEventListener('click', ()=>{
+currentItem = Math.floor(Math.random()* reviews.length);
+showPerson(currentItem);
+})
